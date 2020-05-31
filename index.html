@@ -1,0 +1,1604 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!------ Required meta tags ------>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!------- Title ------->
+    <title>Document</title>
+
+    <!------- Favicon Icon ------->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/png">
+
+
+    <!------- Google Fonts ------->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;500;700;900&display=swap" rel="stylesheet"> 
+
+    <!------- Bootstrap css ------->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!------- Fontawesome css ------->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+
+
+
+    <style>
+        /* Base Css Start  */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800');
+
+html {
+	font-size: 62.5%;
+}
+ body {
+	font-family: 'Lato', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+}
+.fix {
+    overflow: hidden;
+}
+
+p {
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 24px;
+	color: #4B5157;
+	margin-bottom: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	color: #262D33;
+	margin-top: 0px;
+}
+h2 {
+	font-size: 3.6rem;
+}
+h3 {
+	font-size: 2.8rem;
+}
+h4 {
+	font-size: 2.2rem;
+}
+h5 {
+	font-size: 1.8rem;
+}
+h6 {
+	font-size: 1.6rem;
+}
+
+a {
+	font-size: 1.6rem;
+}
+.img {
+	max-width: 100%;
+	-webkit-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+}
+
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+a:focus,
+a:hover{
+	text-decoration: none;
+}
+
+span, a {
+    display: inline-block;
+}
+ul,ol {
+	margin: 0px;
+	padding: 0px;
+    list-style-type: none;
+}
+div[data-relative="yes"] {
+	position: relative;
+}
+/* Base Css End */
+
+/* offCanvasMenu css start */
+.off-canvas-menu-wrap {
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 300px;
+	height: 100%;
+	background: #fff;
+	z-index: 99999999;
+	transform: translateX(300px);
+	transition: .5s;
+}
+.off-canvas-menu-wrap.active {
+	transform: translateX(0);
+}
+.off-canvas-menu {
+	padding-left: 20px;
+	padding-top: 50px;
+	padding-right: 20px;
+}
+.off-canvas-menu li {
+	border-bottom: 1px solid #cabfbf66;
+	margin-bottom: 7px;
+	padding-bottom: 6px;
+}
+.off-canvas-menu li a {
+	color: #403b3b;
+	font-size: 14px;
+	transition: .3s;
+	position: relative;
+}
+.off-canvas-overlay {
+	background: #000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10000000;
+	opacity: 0;
+	cursor: pointer;
+	visibility: hidden;
+	transition: .5s;
+}
+.off-canvas-overlay.active {
+	opacity: .5;
+	visibility: visible;
+}
+.cls-off-canvas-menu {
+	position: absolute;
+	top: 8px;
+	left: 20px;
+	color: #403b3b;
+	font-size: 26px;
+	cursor: pointer;
+}
+.toggle-bar i {
+	color: #262D33;
+	font-size: 25px;
+	cursor: pointer;
+}
+.toggle-bar {
+	display:none;
+}
+/* offCanvasMenu menu css end */
+
+/* header css start  */
+
+.main-menu {
+	display: flex;
+	align-items: center;
+  }
+  .main-menu li a {
+	color: #939699;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 600;
+	display: inline-block;
+	padding: 24px 0;
+  }
+  .main-menu li:not(:last-child) {
+	margin-right: 28px;
+  }
+  .main-menu li a i {
+	margin-left: 2px;
+	font-size: 16px;
+  }
+  .input-inside {
+	position: relative;
+  }
+  .input-inside input {
+	width: 100%;
+	height: 38px;
+	border: 1px solid #D9DADB;
+	border-radius: 5px;
+	padding: 0 15px;
+	font-size: 14px;
+	color: #939699;
+	padding-left: 35px;
+  }
+  .sc-icon {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 10px;
+	color: #BCBFC2;
+	font-size: 18px;
+  }
+  .header-search {
+	flex: 0 0 270px;
+  }
+/* header css end */
+
+/* introduce-area css start  */
+
+.sec-img img {
+	max-width: 100%;
+	width: 100%;
+	border-radius: 10px;
+  }
+
+  .cmn-para p {
+	font-family: helvetica;
+	font-size: 16px;
+  }
+  .cmn-para p:not(:last-child) {
+	margin-bottom: 20px;
+  }
+  .writer-wrap {
+	display: flex;
+	align-items: center;
+	margin-bottom: 40px;
+	margin-top: 50px;
+  }
+  .writer-thumbnail {
+	flex: 0 0 65px;
+	margin-right: 15px;
+  }
+  .writer-thumbnail img {
+	width: 100%;
+	max-width: 100%;
+	border-radius: 50%;
+  }
+  .writer-wrap h5 {
+	font-size: 14px;
+	color: #939699;
+	font-weight: 600;
+	margin: 0;
+  }
+  .writer-wrap h5 span {
+	display: block;
+	font-weight: 500;
+	font-size: 14px;
+	margin-top: 8px;
+  }
+  .writting-date p {
+	font-size: 16px;
+	color: #A7A7A8;
+	font-family: Helvetica;
+	margin: 0;
+  }
+  
+.section-title {
+	text-align: center;
+	margin-bottom: 65px;
+  }
+  .section-title h2 {
+	color: #262D33;
+	font-size: 50px;
+	font-weight: bold;
+	margin-bottom: 10px;
+  }
+  .introduce-area {
+	padding: 90px 0;
+  }
+/* introduce-area css end */
+
+/* twin-area css start  */
+
+.hotel-status {
+	background: #3DC47E;
+	width: 66px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 600;
+	display: inline-block;
+  }
+  .twin-title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 8px;
+  }
+  .twin-title h3 {
+	font-size: 25px;
+	color: #262D33;
+	font-weight: 800;
+	max-width: 400px;
+	ho: ;
+	overflow: hidden;
+	margin: 0;
+  }
+  .hotel-crud-btn {
+	display: flex;
+	align-items: center;
+	margin-bottom: 15px;
+  }
+  .hotel-crud-btn li a {
+	color: #307ADB;
+	font-size: 17px;
+	font-weight: 700;
+	display: inline-block;
+  }
+  .hotel-crud-btn li:not(:last-child) {
+	position: relative;
+	margin-right: 34px;
+  }
+  .hotel-crud-btn {
+  }
+  .hotel-crud-btn li:not(:last-child):after {
+	content: "";
+	width: 2px;
+	height: 15px;
+	background: #307ADB;
+	position: absolute;
+	right: -17px;
+	top: 51%;
+	transform: translateY(-50%);
+  }
+  .box-btn {
+	color: #262D33;
+	font-size: 14px;
+	font-weight: 600;
+	display: inline-block;
+	width: 144px;
+	height: 38px;
+	text-align: center;
+	line-height: 36px;
+	border: 1px solid #262D33;
+	border-radius: 3px;
+	transition: .3s;
+  }
+  .box-btn:hover {
+	background: #262D33;
+	color: #fff;
+  }
+  .box-btn.black-bg {
+	background: #262D33;
+	color: #fff;
+  }
+  .box-btn.black-bg:hover {
+	color: #262D33;
+	background: transparent;
+  }
+  .twin-btns a.box-btn:not(:last-child) {
+	margin-right: 15px;
+  }
+  .twin-btns {
+	margin-top: 25px;
+	margin-bottom: 25px;
+  }
+  .statis-wrap {
+	display: flex;
+	align-items: center;
+	width: 50%;
+  }
+  .statis-wrap p a {
+	display: block;
+	color: #013581;
+	font-size: 14px;
+	display: ;
+	line-height: ;
+  }
+  .statis-wrap p {
+	line-height: 20px;
+	color: #6A6A6A;
+	font-size: 13px;
+	font-weight: bold;
+  }
+  .hotel-statistics-wrap {
+	display: flex;
+	align-items: center;
+  }
+  .statis-thumbnail img {
+	max-width: 100%;
+	width: 100%;
+  }
+  .statis-thumbnail {
+	flex: 0 0 45px;
+	margin-right: 10px;
+  }
+  .score-point {
+	background: #003581;
+	width: 34px;
+	height: 34px;
+	border-radius: 9px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 17px;
+	color: #fff;
+	font-weight: bold;
+  }
+  
+.hotel-img img {
+	max-width: 100%;
+	width: 100%;
+	border-radius: 10px;
+  }
+  .hotel-img p {
+	color: #939699;
+	font-size: 13px;
+	text-align: center;
+	font-weight: 500;
+	margin-top: 3px;
+  }
+  .twin-content-box {
+	border-top: .5px solid #B5B2B2;
+	padding-top: 80px;
+	padding-bottom: 15px;
+}
+.hotel-status.trending {
+	background: #FFA34D;
+}
+/* twin-area css end */
+/* guest-area css start  */
+.guest-area {
+	background: #F4F3F3;
+	padding: 15px 0;
+	margin-bottom: 35px;
+}
+  .guest-wrapper h5 {
+	color: #262D33;
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 20px;
+  }
+  .guest-three-in-wrap {
+	display: flex;
+	width: 90%;
+	margin: auto;
+  }
+  .guest-single-wrap p {
+	font-size: 13px;
+	color: #4B5157;
+	line-height: 18px;
+	margin-bottom: 20px;
+  }
+  .guest-single-wrap {
+	width: 33.33333%;
+	padding: 0 45px;
+  }
+  .guest-single-wrap h4 {
+	color: #4B5157;
+	font-size: 13px;
+	font-family: helvetica;
+	font-weight: bold;
+  }
+  .guest-single-wrap h4 span {
+	display: block;
+	font-size: 13px;
+	font-weight: 300;
+	margin-top: 2px;
+  }
+  .guest-single-wrap.middle {
+	border-left: .5px solid #B5B2B2;
+	border-right: .5px solid #B5B2B2;
+}
+
+.more-reviews {
+	text-align: center;
+	margin-top: 20px;
+  }
+  .more-reviews a {
+	color: #4B5157;
+	font-size: 15px;
+	font-weight: bold;
+	display: inline-block;
+  }
+/* guest-area css end */
+
+/* explore-area css start  */
+
+.explore-wrapper {
+	background: #30363D;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	padding: 20px 0;
+  }
+  .explore-item h4 {
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0;
+	margin-right: 15px;
+	line-height: 25px;
+	font-family: 'Roboto Slab', serif;
+}
+  .explore-item {
+	width: 25%;
+	padding: 0 20px;
+	display: flex;
+	align-items: center;
+  }
+  .explore-wrapper .explore-item:not(:last-child) {
+	border-right: 1px solid #4B5157;
+  }
+  .sec-title-2 {
+	text-align: center;
+	margin-bottom: 50px;
+  }
+  .sec-title-2 h2 {
+	font-size: 30px;
+	color: #262D33;
+	font-weight: 800;
+	margin: 0;
+  }
+  .explore-area {
+	padding: 95px 0;
+	padding-bottom: 115px;
+  }
+  .explore-img img {
+	max-width: 65px;
+  }
+/* explore-area css end */
+
+
+/* footer css start  */
+
+.footer-area {
+	background: #262D33;
+	padding: 30px 0;
+  }
+  .footer-flex-wrap {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid #383F45;
+	padding-bottom: 28px;
+	margin-bottom: 26px;
+  }
+  .ft-menu {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  .ft-menu li:not(:last-child) {
+	margin-right: 37px;
+  }
+  .ft-menu li a {
+	color: #fff;
+	font-size: 14px;
+	font-weight: 600;
+	display: inline-block;
+	transition: .3s;
+  }
+  .social-lnks {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+  }
+  .social-lnks li:not(:first-child) {
+	margin-left: 15px;
+  }
+  .social-lnks li a {
+	color: #fff;
+	font-size: 16px;
+	transition: .3s;
+  }
+  .social-lnks li a:hover {
+	poa: ;
+	opacity: .7;
+  }
+  .ft-menu li a:hover {
+	color: ;
+	opacity: .7;
+  }
+  .copyright-text {
+	text-align: center;
+  }
+  .copyright-text p {
+	font-size: 14px;
+	color: #939699;
+	font-weight: 400;
+  }
+  .ft-logo img {
+	max-width: 100%;
+  }
+/* footer css end */
+.header-search.for-mobile {
+	margin: 20px;
+}
+.logo img {
+	margin: ;
+	max-width: 110px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tablet desktop :768px. */
+@media (min-width: 320px) and (max-width: 991.98px) {
+    .toggle-bar {
+        display:inline-block;
+    }
+    .header-search {
+        flex: 0 0 205px;
+    }
+    .header-area {
+        height: 65px;
+        display: flex;
+        align-items: center;
+    }
+    .section-title h2 {
+        font-size: 36px;
+    }
+    .introduce-area {
+        padding: 50px 0;
+    }
+    .sec-img {
+        margin-bottom: 25px;
+    }
+    .twin-content-box {
+        border-top: .5px solid #B5B2B2;
+        padding-top: 60px;
+        padding-bottom: 15px;
+    }
+    .guest-single-wrap {
+        width: 33.33333%;
+        padding: 0 30px;
+    }
+    .guest-three-in-wrap {
+        width: 100%;
+        margin: auto;
+    }
+    .guest-area {
+        padding: 15px 0;
+        margin-bottom: 30px;
+    }
+    .hotel-img {
+        margin-bottom: 25px;
+    }
+    .explore-area {
+        padding: 25px 0;
+        padding-bottom: 70px;
+    }
+    .explore-item {
+        width: 100%;
+        padding: 0 20px;
+        justify-content: space-between;
+    }
+    .explore-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 20px;
+    }
+    .logo {
+        flex: 0 0 100%;
+        text-align: left;
+    }
+
+}
+
+ 
+/* small mobile :320px. */
+@media (min-width: 320px) and (max-width: 767.98px) {
+    .section-title h2 {
+        font-size: 28px;
+    }
+    .section-title {
+        margin-bottom: 35px;
+    }
+    .guest-single-wrap {
+        width: 100%;
+        padding: 15px 0px;
+    }
+    .guest-three-in-wrap {
+        width: 100%;
+        margin: auto;
+        display: block;
+    }
+    .guest-single-wrap.middle {
+        border: 0;
+    }
+    .twin-content-box {
+        border-top: .5px solid #B5B2B2;
+        padding-top: 45px;
+        padding-bottom: 15px;
+    }
+    .twin-title h3 {
+        font-size: 22px;
+    }
+    
+.guest-single-wrap.middle {
+    border: 0;
+  }
+  .footer-flex-wrap {
+    display: grid;
+    text-align: center;
+    grid-row-gap: 25px;
+    grid-template-columns: 1fr;
+  }
+  .ft-menu {
+    display: block;
+    text-align: center;
+  }
+  .ft-menu li {
+    margin: 0 !important;
+    margin-bottom: 5px !important;
+  }
+  .social-lnks {
+    justify-content: center;
+  }
+  .explore-wrapper {
+	grid-template-columns: 1fr;
+}
+.sec-title-2 h2 {
+	font-size: 26px;
+}
+.hotel-crud-btn li a {
+	font-size: 15px;
+}
+
+
+ 
+}
+    </style>
+
+</head>
+
+<body>
+
+    <div class="off-canvas-menu-wrap">
+        <ul class="off-canvas-menu">
+            <li><a href="#">Hotels <i class="fal fa-angle-down"></i></a></li>
+            <li><a href="#">Cars <i class="fal fa-angle-down"></i></a></li>
+            <li><a href="#">Inspiration <i class="fal fa-angle-down"></i></a></li>
+        </ul>
+        <div class="cls-off-canvas-menu">
+            <i class="fal fa-times"></i>
+        </div>
+
+        <div class="header-search for-mobile">
+            <div class="input-inside">
+                <input type="text" placeholder="Discover a city">
+                <span class="sc-icon"><i class="fal fa-search"></i></span>
+            </div>
+        </div>
+    </div>
+    <div class="off-canvas-overlay"></div>
+
+    <header class="header-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 d-none d-lg-flex align-items-center">
+                  
+                    <ul class="main-menu d-none d-lg-flex">
+                        <li><a href="#">Hotels <i class="fal fa-angle-down"></i></a></li>
+                        <li><a href="#">Cars <i class="fal fa-angle-down"></i></a></li>
+                        <li><a href="#">Inspiration <i class="fal fa-angle-down"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <a href="#" class="logo"><img src="assets/img/ft-logo.svg" alt="Logo"></a>
+                </div>
+                <div class="col-6 d-flex align-items-center justify-content-end d-lg-none d-xl-none"> <div class="toggle-bar"><i class="fal fa-bars"></i></div></div>
+                <div class="col-md-4 d-none d-lg-flex align-items-center justify-content-end">
+                    <div class="header-search">
+                        <div class="input-inside">
+                            <input type="text" placeholder="Discover a city">
+                            <span class="sc-icon"><i class="fal fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="introduce-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-title">
+                            <h2>The 8 Best Hotels in Rome, Italy</h2>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="introduce-box-wrap">
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <div class="sec-img">
+                                        <img src="assets/img/img-1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="introduce-content">
+                                        <div class="cmn-para">
+                                            <p>As one of the most visited cities in the world, Rome has an abundance of accommodation options. From high-end luxury to independent boutique – and, like anywhere, places best off avoided altogether – there’s a lot to choose from. To help narrow down the search, we’ve rounded up some of the best hotels in Rome. Resting your head during a trip to the Eternal City just got a whole lot more comfortable.</p>
+                                        </div>
+                                        <div class="writer-wrap">
+                                            <div class="writer-thumbnail">
+                                                <img src="assets/img/writer.png" alt="">
+                                            </div>
+                                            <h5>Jordan Koukides <span>HUNO Writer</span></h5>
+                                        </div>
+                                        <div class="writting-date">
+                                            <p>Updated May 2020</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- ./introduce-area -->
+
+        <div class="hotel-type">
+            <div class="twin-area">
+                <div class="container">
+                    <div class="twin-content-box">
+                        <div class="row">
+                            <div class="col-lg-6 order-2 order-lg-1">
+                                <div class="twin-content-wrapper">
+                                    <div class="twin-title">
+                                        <h3>1. Rocco Forte Hotel de Russie</h3>
+                                        <span class="hotel-status">Popular</span>
+                                    </div>
+                                    <ul class="hotel-crud-btn">
+                                        <li><a href="#">Excellent location</a></li>
+                                        <li><a href="#">show map</a></li>
+                                    </ul>
+                                    <div class="cmn-wrap">
+                                        <p>From its strategic location in Rome’s Centro Storico, Hotel de Russie has hosted Hollywood A-listers, writers, politicians and sports stars. The rooms blend modern design with Classical architecture and were decorated by hotelier Olga Polizzi. One of the newest rooms is the Picasso Suite, dedicated to the artist who stayed there for three months in 1917. As well as Picasso-inspired furnishings, it features an opulent, Italian marble bathroom and boasts a view of the hotel’s secret garden courtyard – home to the famous Stravinskij Bar, a spectacular spot for dinner or drinks.
+                                        </p>
+                                    </div>
+                                    <div class="twin-btns">
+                                        <a href="#" class="box-btn black-bg">Available rooms</a>
+                                        <a href="#" class="box-btn">Read more</a>
+                                    </div>
+
+                                    <div class="hotel-statistics-wrap">
+                                        <div class="statis-wrap">
+                                            <div class="statis-thumbnail">
+                                                <span class="score-point">9.1</span>
+                                            </div>
+                                            <p><a href="#">Wonderful</a> 145 reviews on Booking.com</p>
+                                        </div>
+                                        <div class="statis-wrap">
+                                            <div class="statis-thumbnail">
+                                                <img src="assets/img/score.png" alt="">
+                                            </div>
+                                            <p><a href="#">Walker’s Paradise</a> Daily errands do not require a car</p>
+                                        </div>
+                                    </div> <!-- ./hotel-statistics-wrap -->
+                                </div>
+                            </div>
+                            <div class="col-lg-6 order-1 order-lg-2">
+                                <div class="hotel-img">
+                                    <img src="assets/img/img-2.png" alt="">
+                                    <p>Courtesy of Booking.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- ./twin-area -->
+
+            <div class="guest-area">
+                <div class="container">
+                    <div class="guest-wrapper">
+                        <h5>What guests loved the most:</h5>
+
+                        <div class="guest-three-in-wrap">
+                            <div class="guest-single-wrap">
+                                <p>“Wonderful property, especially the rooms. The roof terrace has a wonderful view, could do with adequate staffing to make it fully operational”
+                                </p>
+                                <h4>Christos
+                                    <span>Greece</span></h4>
+                            </div>
+                            <div class="guest-single-wrap middle">
+                                <p>“Wonderful property, especially the rooms. The roof terrace has a wonderful view, could do with adequate staffing to make it fully operational”
+                                </p>
+                                <h4>Christos
+                                    <span>Greece</span></h4>
+                            </div>
+                            <div class="guest-single-wrap">
+                                <p>“Wonderful property, especially the rooms. The roof terrace has a wonderful view, could do with adequate staffing to make it fully operational”
+                                </p>
+                                <h4>Christos
+                                    <span>Greece</span></h4>
+                            </div>
+                        </div> <!-- ./guest-three-in-wrap -->
+
+                        <div class="more-reviews">
+                            <a href="#">See more reviews on Booking.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- ./guest-area -->
+        </div> <!-- ./hotel-type -->
+        <div class="hotel-type">
+            <div class="twin-area">
+                <div class="container">
+                    <div class="twin-content-box">
+                        <div class="row">
+                            <div class="col-lg-6 order-2 order-lg-1">
+                                <div class="twin-content-wrapper">
+                                    <div class="twin-title">
+                                        <h3>1. Rocco Forte Hotel de Russie</h3>
+                                        <span class="hotel-status">Popular</span>
+                                    </div>
+                                    <ul class="hotel-crud-btn">
+                                        <li><a href="#">Excellent location</a></li>
+                                        <li><a href="#">show map</a></li>
+                                    </ul>
+                                    <div class="cmn-wrap">
+                                        <p>From its strategic location in Rome’s Centro Storico, Hotel de Russie has hosted Hollywood A-listers, writers, politicians and sports stars. The rooms blend modern design with Classical architecture and were decorated by hotelier Olga Polizzi. One of the newest rooms is the Picasso Suite, dedicated to the artist who stayed there for three months in 1917. As well as Picasso-inspired furnishings, it features an opulent, Italian marble bathroom and boasts a view of the hotel’s secret garden courtyard – home to the famous Stravinskij Bar, a spectacular spot for dinner or drinks.
+                                        </p>
+                                    </div>
+                                    <div class="twin-btns">
+                                        <a href="#" class="box-btn black-bg">Available rooms</a>
+                                        <a href="#" class="box-btn">Read more</a>
+                                    </div>
+
+                                    <div class="hotel-statistics-wrap">
+                                        <div class="statis-wrap">
+                                            <div class="statis-thumbnail">
+                                                <span class="score-point">9.1</span>
+                                            </div>
+                                            <p><a href="#">Wonderful</a> 145 reviews on Booking.com</p>
+                                        </div>
+                                        <div class="statis-wrap">
+                                            <div class="statis-thumbnail">
+                                                <img src="assets/img/score.png" alt="">
+                                            </div>
+                                            <p><a href="#">Walker’s Paradise</a> Daily errands do not require a car</p>
+                                        </div>
+                                    </div> <!-- ./hotel-statistics-wrap -->
+                                </div>
+                            </div>
+                            <div class="col-lg-6 order-1 order-lg-2">
+                                <div class="hotel-img">
+                                    <img src="assets/img/img-3.png" alt="">
+                                    <p>Courtesy of Booking.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- ./twin-area -->
+
+            <div class="guest-area">
+                <div class="container">
+                    <div class="guest-wrapper">
+                        <h5>What guests loved the most:</h5>
+
+                        <div class="guest-three-in-wrap">
+                            <div class="guest-single-wrap">
+                                <p>“Wonderful property, especially the rooms. The roof terrace has a wonderful view, could do with adequate staffing to make it fully operational”
+                                </p>
+                                <h4>Christos
+                                    <span>Greece</span></h4>
+                            </div>
+                            <div class="guest-single-wrap middle">
+                                <p>“Wonderful property, especially the rooms. The roof terrace has a wonderful view, could do with adequate staffing to make it fully operational”
+                                </p>
+                                <h4>Christos
+                                    <span>Greece</span></h4>
+                            </div>
+                            <div class="guest-single-wrap">
+                                <p>“Wonderful property, especially the rooms. The roof terrace has a wonderful view, could do with adequate staffing to make it fully operational”
+                                </p>
+                                <h4>Christos
+                                    <span>Greece</span></h4>
+                            </div>
+                        </div> <!-- ./guest-three-in-wrap -->
+
+                        <div class="more-reviews">
+                            <a href="#">See more reviews on Booking.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- ./guest-area -->
+        </div> <!-- ./hotel-type -->
+        <div class="hotel-type">
+            <div class="twin-area">
+                <div class="container">
+                    <div class="twin-content-box">
+                        <div class="row">
+                            <div class="col-lg-6 order-2 order-lg-1">
+                                <div class="twin-content-wrapper">
+                                    <div class="twin-title">
+                                        <h3>1. Rocco Forte Hotel de Russie</h3>
+                                    </div>
+                                    <ul class="hotel-crud-btn">
+                                        <li><a href="#">Excellent location</a></li>
+                                        <li><a href="#">show map</a></li>
+                                    </ul>
+                                    <div class="cmn-wrap">
+                                        <p>From its strategic location in Rome’s Centro Storico, Hotel de Russie has hosted Hollywood A-listers, writers, politicians and sports stars. The rooms blend modern design with Classical architecture and were decorated by hotelier Olga Polizzi. One of the newest rooms is the Picasso Suite, dedicated to the artist who stayed there for three months in 1917. As well as Picasso-inspired furnishings, it features an opulent, Italian marble bathroom and boasts a view of the hotel’s secret garden courtyard – home to the famous Stravinskij Bar, a spectacular spot for dinner or drinks.
+                                        </p>
+                                    </div>
+                                    <div class="twin-btns">
+                                        <a href="#" class="box-btn black-bg">Available rooms</a>
+                                        <a href="#" class="box-btn">Read more</a>
+                                    </div>
+
+                                    <div class="hotel-statistics-wrap">
+                                        <div class="statis-wrap">
+                                            <div class="statis-thumbnail">
+                                                <span class="score-point">9.1</span>
+                                            </div>
+                                            <p><a href="#">Wonderful</a> 145 reviews on Booking.com</p>
+                                        </div>
+                                        <div class="statis-wrap">
+                                            <div class="statis-thumbnail">
+                                                <img src="assets/img/score.png" alt="">
+                                            </div>
+                                            <p><a href="#">Walker’s Paradise</a> Daily errands do not require a car</p>
+                                        </div>
+                                    </div> <!-- ./hotel-statistics-wrap -->
+                                </div>
+                            </div>
+                            <div class="col-lg-6 order-1 order-lg-2">
+                                <div class="hotel-img">
+                                    <img src="assets/img/img-4.png" alt="">
+                                    <p>Courtesy of Booking.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- ./twin-area -->
+
+            <div class="guest-area">
+                <div class="container">
+                    <div class="guest-wrapper">
+                        <h5>What guests loved the most:</h5>
+
+                        <div class="guest-three-in-wrap">
+                            <div class="guest-single-wrap">
+                                <p>“Wonderful property, especially the rooms. The roof terrace has a wonderful view, could do with adequate staffing to make it fully operational”
+                                </p>
+                                <h4>Christos
+                                    <span>Greece</span></h4>
+                            </div>
+                            <div class="guest-single-wrap middle">
+                                <p>“Wonderful property, especially the rooms. The roof terrace has a wonderful view, could do with adequate staffing to make it fully operational”
+                                </p>
+                                <h4>Christos
+                                    <span>Greece</span></h4>
+                            </div>
+                            <div class="guest-single-wrap">
+                                <p>“Wonderful property, especially the rooms. The roof terrace has a wonderful view, could do with adequate staffing to make it fully operational”
+                                </p>
+                                <h4>Christos
+                                    <span>Greece</span></h4>
+                            </div>
+                        </div> <!-- ./guest-three-in-wrap -->
+
+                        <div class="more-reviews">
+                            <a href="#">See more reviews on Booking.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- ./guest-area -->
+        </div> <!-- ./hotel-type -->
+        <div class="hotel-type">
+            <div class="twin-area">
+                <div class="container">
+                    <div class="twin-content-box">
+                        <div class="row">
+                            <div class="col-lg-6 order-2 order-lg-1">
+                                <div class="twin-content-wrapper">
+                                    <div class="twin-title">
+                                        <h3>1. Rocco Forte Hotel de Russie</h3>
+                                        <span class="hotel-status trending">Trending</span>
+                                    </div>
+                                    <ul class="hotel-crud-btn">
+                                        <li><a href="#">Excellent location</a></li>
+                                        <li><a href="#">show map</a></li>
+                                    </ul>
+                                    <div class="cmn-wrap">
+                                        <p>From its strategic location in Rome’s Centro Storico, Hotel de Russie has hosted Hollywood A-listers, writers, politicians and sports stars. The rooms blend modern design with Classical architecture and were decorated by hotelier Olga Polizzi. One of the newest rooms is the Picasso Suite, dedicated to the artist who stayed there for three months in 1917. As well as Picasso-inspired furnishings, it features an opulent, Italian marble bathroom and boasts a view of the hotel’s secret garden courtyard – home to the famous Stravinskij Bar, a spectacular spot for dinner or drinks.
+                                        </p>
+                                    </div>
+                                    <div class="twin-btns">
+                                        <a href="#" class="box-btn black-bg">Available rooms</a>
+                                        <a href="#" class="box-btn">Read more</a>
+                                    </div>
+
+                                    <div class="hotel-statistics-wrap">
+                                        <div class="statis-wrap">
+                                            <div class="statis-thumbnail">
+                                                <span class="score-point">9.1</span>
+                                            </div>
+                                            <p><a href="#">Wonderful</a> 145 reviews on Booking.com</p>
+                                        </div>
+                                        <div class="statis-wrap">
+                                            <div class="statis-thumbnail">
+                                                <img src="assets/img/score.png" alt="">
+                                            </div>
+                                            <p><a href="#">Walker’s Paradise</a> Daily errands do not require a car</p>
+                                        </div>
+                                    </div> <!-- ./hotel-statistics-wrap -->
+                                </div>
+                            </div>
+                            <div class="col-lg-6 order-1 order-lg-2">
+                                <div class="hotel-img">
+                                    <img src="assets/img/img-5.png" alt="">
+                                    <p>Courtesy of Booking.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- ./twin-area -->
+
+            <div class="guest-area">
+                <div class="container">
+                    <div class="guest-wrapper">
+                        <h5>What guests loved the most:</h5>
+
+                        <div class="guest-three-in-wrap">
+                            <div class="guest-single-wrap">
+                                <p>“Wonderful property, especially the rooms. The roof terrace has a wonderful view, could do with adequate staffing to make it fully operational”
+                                </p>
+                                <h4>Christos
+                                    <span>Greece</span></h4>
+                            </div>
+                            <div class="guest-single-wrap middle">
+                                <p>“Wonderful property, especially the rooms. The roof terrace has a wonderful view, could do with adequate staffing to make it fully operational”
+                                </p>
+                                <h4>Christos
+                                    <span>Greece</span></h4>
+                            </div>
+                            <div class="guest-single-wrap">
+                                <p>“Wonderful property, especially the rooms. The roof terrace has a wonderful view, could do with adequate staffing to make it fully operational”
+                                </p>
+                                <h4>Christos
+                                    <span>Greece</span></h4>
+                            </div>
+                        </div> <!-- ./guest-three-in-wrap -->
+
+                        <div class="more-reviews">
+                            <a href="#">See more reviews on Booking.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- ./guest-area -->
+        </div> <!-- ./hotel-type -->
+        <div class="hotel-type">
+            <div class="twin-area">
+                <div class="container">
+                    <div class="twin-content-box">
+                        <div class="row">
+                            <div class="col-lg-6 order-2 order-lg-1">
+                                <div class="twin-content-wrapper">
+                                    <div class="twin-title">
+                                        <h3>1. Rocco Forte Hotel de Russie</h3>
+                                    </div>
+                                    <ul class="hotel-crud-btn">
+                                        <li><a href="#">Excellent location</a></li>
+                                        <li><a href="#">show map</a></li>
+                                    </ul>
+                                    <div class="cmn-wrap">
+                                        <p>From its strategic location in Rome’s Centro Storico, Hotel de Russie has hosted Hollywood A-listers, writers, politicians and sports stars. The rooms blend modern design with Classical architecture and were decorated by hotelier Olga Polizzi. One of the newest rooms is the Picasso Suite, dedicated to the artist who stayed there for three months in 1917. As well as Picasso-inspired furnishings, it features an opulent, Italian marble bathroom and boasts a view of the hotel’s secret garden courtyard – home to the famous Stravinskij Bar, a spectacular spot for dinner or drinks.
+                                        </p>
+                                    </div>
+                                    <div class="twin-btns">
+                                        <a href="#" class="box-btn black-bg">Available rooms</a>
+                                        <a href="#" class="box-btn">Read more</a>
+                                    </div>
+
+                                    <div class="hotel-statistics-wrap">
+                                        <div class="statis-wrap">
+                                            <div class="statis-thumbnail">
+                                                <span class="score-point">9.1</span>
+                                            </div>
+                                            <p><a href="#">Wonderful</a> 145 reviews on Booking.com</p>
+                                        </div>
+                                        <div class="statis-wrap">
+                                            <div class="statis-thumbnail">
+                                                <img src="assets/img/score.png" alt="">
+                                            </div>
+                                            <p><a href="#">Walker’s Paradise</a> Daily errands do not require a car</p>
+                                        </div>
+                                    </div> <!-- ./hotel-statistics-wrap -->
+                                </div>
+                            </div>
+                            <div class="col-lg-6 order-1 order-lg-2">
+                                <div class="hotel-img">
+                                    <img src="assets/img/img-6.png" alt="">
+                                    <p>Courtesy of Booking.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- ./twin-area -->
+
+            <div class="guest-area">
+                <div class="container">
+                    <div class="guest-wrapper">
+                        <h5>What guests loved the most:</h5>
+
+                        <div class="guest-three-in-wrap">
+                            <div class="guest-single-wrap">
+                                <p>“Wonderful property, especially the rooms. The roof terrace has a wonderful view, could do with adequate staffing to make it fully operational”
+                                </p>
+                                <h4>Christos
+                                    <span>Greece</span></h4>
+                            </div>
+                            <div class="guest-single-wrap middle">
+                                <p>“Wonderful property, especially the rooms. The roof terrace has a wonderful view, could do with adequate staffing to make it fully operational”
+                                </p>
+                                <h4>Christos
+                                    <span>Greece</span></h4>
+                            </div>
+                            <div class="guest-single-wrap">
+                                <p>“Wonderful property, especially the rooms. The roof terrace has a wonderful view, could do with adequate staffing to make it fully operational”
+                                </p>
+                                <h4>Christos
+                                    <span>Greece</span></h4>
+                            </div>
+                        </div> <!-- ./guest-three-in-wrap -->
+
+                        <div class="more-reviews">
+                            <a href="#">See more reviews on Booking.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- ./guest-area -->
+        </div> <!-- ./hotel-type -->
+        <div class="hotel-type">
+            <div class="twin-area">
+                <div class="container">
+                    <div class="twin-content-box">
+                        <div class="row">
+                            <div class="col-lg-6 order-2 order-lg-1">
+                                <div class="twin-content-wrapper">
+                                    <div class="twin-title">
+                                        <h3>1. Rocco Forte Hotel de Russie</h3>
+                                        <span class="hotel-status">Popular</span>
+                                    </div>
+                                    <ul class="hotel-crud-btn">
+                                        <li><a href="#">Excellent location</a></li>
+                                        <li><a href="#">show map</a></li>
+                                    </ul>
+                                    <div class="cmn-wrap">
+                                        <p>From its strategic location in Rome’s Centro Storico, Hotel de Russie has hosted Hollywood A-listers, writers, politicians and sports stars. The rooms blend modern design with Classical architecture and were decorated by hotelier Olga Polizzi. One of the newest rooms is the Picasso Suite, dedicated to the artist who stayed there for three months in 1917. As well as Picasso-inspired furnishings, it features an opulent, Italian marble bathroom and boasts a view of the hotel’s secret garden courtyard – home to the famous Stravinskij Bar, a spectacular spot for dinner or drinks.
+                                        </p>
+                                    </div>
+                                    <div class="twin-btns">
+                                        <a href="#" class="box-btn black-bg">Available rooms</a>
+                                        <a href="#" class="box-btn">Read more</a>
+                                    </div>
+
+                                    <div class="hotel-statistics-wrap">
+                                        <div class="statis-wrap">
+                                            <div class="statis-thumbnail">
+                                                <span class="score-point">9.1</span>
+                                            </div>
+                                            <p><a href="#">Wonderful</a> 145 reviews on Booking.com</p>
+                                        </div>
+                                        <div class="statis-wrap">
+                                            <div class="statis-thumbnail">
+                                                <img src="assets/img/score.png" alt="">
+                                            </div>
+                                            <p><a href="#">Walker’s Paradise</a> Daily errands do not require a car</p>
+                                        </div>
+                                    </div> <!-- ./hotel-statistics-wrap -->
+                                </div>
+                            </div>
+                            <div class="col-lg-6 order-1 order-lg-2">
+                                <div class="hotel-img">
+                                    <img src="assets/img/img-7.png" alt="">
+                                    <p>Courtesy of Booking.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- ./twin-area -->
+
+            <div class="guest-area">
+                <div class="container">
+                    <div class="guest-wrapper">
+                        <h5>What guests loved the most:</h5>
+
+                        <div class="guest-three-in-wrap">
+                            <div class="guest-single-wrap">
+                                <p>“Wonderful property, especially the rooms. The roof terrace has a wonderful view, could do with adequate staffing to make it fully operational”
+                                </p>
+                                <h4>Christos
+                                    <span>Greece</span></h4>
+                            </div>
+                            <div class="guest-single-wrap middle">
+                                <p>“Wonderful property, especially the rooms. The roof terrace has a wonderful view, could do with adequate staffing to make it fully operational”
+                                </p>
+                                <h4>Christos
+                                    <span>Greece</span></h4>
+                            </div>
+                            <div class="guest-single-wrap">
+                                <p>“Wonderful property, especially the rooms. The roof terrace has a wonderful view, could do with adequate staffing to make it fully operational”
+                                </p>
+                                <h4>Christos
+                                    <span>Greece</span></h4>
+                            </div>
+                        </div> <!-- ./guest-three-in-wrap -->
+
+                        <div class="more-reviews">
+                            <a href="#">See more reviews on Booking.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- ./guest-area -->
+        </div> <!-- ./hotel-type -->
+        <div class="hotel-type">
+            <div class="twin-area">
+                <div class="container">
+                    <div class="twin-content-box">
+                        <div class="row">
+                            <div class="col-lg-6 order-2 order-lg-1">
+                                <div class="twin-content-wrapper">
+                                    <div class="twin-title">
+                                        <h3>1. Rocco Forte Hotel de Russie</h3>
+                                    </div>
+                                    <ul class="hotel-crud-btn">
+                                        <li><a href="#">Excellent location</a></li>
+                                        <li><a href="#">show map</a></li>
+                                    </ul>
+                                    <div class="cmn-wrap">
+                                        <p>From its strategic location in Rome’s Centro Storico, Hotel de Russie has hosted Hollywood A-listers, writers, politicians and sports stars. The rooms blend modern design with Classical architecture and were decorated by hotelier Olga Polizzi. One of the newest rooms is the Picasso Suite, dedicated to the artist who stayed there for three months in 1917. As well as Picasso-inspired furnishings, it features an opulent, Italian marble bathroom and boasts a view of the hotel’s secret garden courtyard – home to the famous Stravinskij Bar, a spectacular spot for dinner or drinks.
+                                        </p>
+                                    </div>
+                                    <div class="twin-btns">
+                                        <a href="#" class="box-btn black-bg">Available rooms</a>
+                                        <a href="#" class="box-btn">Read more</a>
+                                    </div>
+
+                                    <div class="hotel-statistics-wrap">
+                                        <div class="statis-wrap">
+                                            <div class="statis-thumbnail">
+                                                <span class="score-point">9.1</span>
+                                            </div>
+                                            <p><a href="#">Wonderful</a> 145 reviews on Booking.com</p>
+                                        </div>
+                                        <div class="statis-wrap">
+                                            <div class="statis-thumbnail">
+                                                <img src="assets/img/score.png" alt="">
+                                            </div>
+                                            <p><a href="#">Walker’s Paradise</a> Daily errands do not require a car</p>
+                                        </div>
+                                    </div> <!-- ./hotel-statistics-wrap -->
+                                </div>
+                            </div>
+                            <div class="col-lg-6 order-1 order-lg-2">
+                                <div class="hotel-img">
+                                    <img src="assets/img/img-2.png" alt="">
+                                    <p>Courtesy of Booking.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- ./twin-area -->
+
+            <div class="guest-area">
+                <div class="container">
+                    <div class="guest-wrapper">
+                        <h5>What guests loved the most:</h5>
+
+                        <div class="guest-three-in-wrap">
+                            <div class="guest-single-wrap">
+                                <p>“Wonderful property, especially the rooms. The roof terrace has a wonderful view, could do with adequate staffing to make it fully operational”
+                                </p>
+                                <h4>Christos
+                                    <span>Greece</span></h4>
+                            </div>
+                            <div class="guest-single-wrap middle">
+                                <p>“Wonderful property, especially the rooms. The roof terrace has a wonderful view, could do with adequate staffing to make it fully operational”
+                                </p>
+                                <h4>Christos
+                                    <span>Greece</span></h4>
+                            </div>
+                            <div class="guest-single-wrap">
+                                <p>“Wonderful property, especially the rooms. The roof terrace has a wonderful view, could do with adequate staffing to make it fully operational”
+                                </p>
+                                <h4>Christos
+                                    <span>Greece</span></h4>
+                            </div>
+                        </div> <!-- ./guest-three-in-wrap -->
+
+                        <div class="more-reviews">
+                            <a href="#">See more reviews on Booking.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- ./guest-area -->
+        </div> <!-- ./hotel-type -->
+        <div class="hotel-type">
+            <div class="twin-area">
+                <div class="container">
+                    <div class="twin-content-box">
+                        <div class="row">
+                            <div class="col-lg-6 order-2 order-lg-1">
+                                <div class="twin-content-wrapper">
+                                    <div class="twin-title">
+                                        <h3>1. Rocco Forte Hotel de Russie</h3>
+                                        <span class="hotel-status">Popular</span>
+                                    </div>
+                                    <ul class="hotel-crud-btn">
+                                        <li><a href="#">Excellent location</a></li>
+                                        <li><a href="#">show map</a></li>
+                                    </ul>
+                                    <div class="cmn-wrap">
+                                        <p>From its strategic location in Rome’s Centro Storico, Hotel de Russie has hosted Hollywood A-listers, writers, politicians and sports stars. The rooms blend modern design with Classical architecture and were decorated by hotelier Olga Polizzi. One of the newest rooms is the Picasso Suite, dedicated to the artist who stayed there for three months in 1917. As well as Picasso-inspired furnishings, it features an opulent, Italian marble bathroom and boasts a view of the hotel’s secret garden courtyard – home to the famous Stravinskij Bar, a spectacular spot for dinner or drinks.
+                                        </p>
+                                    </div>
+                                    <div class="twin-btns">
+                                        <a href="#" class="box-btn black-bg">Available rooms</a>
+                                        <a href="#" class="box-btn">Read more</a>
+                                    </div>
+
+                                    <div class="hotel-statistics-wrap">
+                                        <div class="statis-wrap">
+                                            <div class="statis-thumbnail">
+                                                <span class="score-point">9.1</span>
+                                            </div>
+                                            <p><a href="#">Wonderful</a> 145 reviews on Booking.com</p>
+                                        </div>
+                                        <div class="statis-wrap">
+                                            <div class="statis-thumbnail">
+                                                <img src="assets/img/score.png" alt="">
+                                            </div>
+                                            <p><a href="#">Walker’s Paradise</a> Daily errands do not require a car</p>
+                                        </div>
+                                    </div> <!-- ./hotel-statistics-wrap -->
+                                </div>
+                            </div>
+                            <div class="col-lg-6 order-1 order-lg-2">
+                                <div class="hotel-img">
+                                    <img src="assets/img/img-2.png" alt="">
+                                    <p>Courtesy of Booking.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- ./twin-area -->
+
+            <div class="guest-area">
+                <div class="container">
+                    <div class="guest-wrapper">
+                        <h5>What guests loved the most:</h5>
+
+                        <div class="guest-three-in-wrap">
+                            <div class="guest-single-wrap">
+                                <p>“Wonderful property, especially the rooms. The roof terrace has a wonderful view, could do with adequate staffing to make it fully operational”
+                                </p>
+                                <h4>Christos
+                                    <span>Greece</span></h4>
+                            </div>
+                            <div class="guest-single-wrap middle">
+                                <p>“Wonderful property, especially the rooms. The roof terrace has a wonderful view, could do with adequate staffing to make it fully operational”
+                                </p>
+                                <h4>Christos
+                                    <span>Greece</span></h4>
+                            </div>
+                            <div class="guest-single-wrap">
+                                <p>“Wonderful property, especially the rooms. The roof terrace has a wonderful view, could do with adequate staffing to make it fully operational”
+                                </p>
+                                <h4>Christos
+                                    <span>Greece</span></h4>
+                            </div>
+                        </div> <!-- ./guest-three-in-wrap -->
+
+                        <div class="more-reviews">
+                            <a href="#">See more reviews on Booking.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- ./guest-area -->
+        </div> <!-- ./hotel-type -->
+
+        <div class="explore-area">
+            <div class="container">
+                <div class="sec-title-2">
+                    <h2>Explore more of Italy</h2>
+                </div>
+                <div class="explore-wrapper">
+                    <div class="explore-item">
+                        <h4>Top 9 Hotels in Venice, Italy</h4>
+                        <div class="explore-img">
+                            <img src="assets/img/e-1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="explore-item">
+                        <h4>Top 12 Hotels in Milan, Italy</h4>
+                        <div class="explore-img">
+                            <img src="assets/img/e-2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="explore-item">
+                        <h4>Top 10 Hotels in Naples, Italy</h4>
+                        <div class="explore-img">
+                            <img src="assets/img/e-3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="explore-item">
+                        <h4>Top 9 Hotels in Turin, Italy </h4>
+                        <div class="explore-img">
+                            <img src="assets/img/e-4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- ./explore-area -->
+    </main>
+
+    <footer class="footer-area">
+        <div class="container">
+            <div class="footer-flex-wrap">
+                <a href="#" class="ft-logo"><img src="assets/img/logo.svg" alt="Logo"></a>
+                <ul class="ft-menu">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">List Your Hotel</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+                <ul class="social-lnks">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="copyright-text">
+                <p>© 2020 Huno.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <!------- jquery js ------->
+    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+
+    <!------- Bootstrap js ------->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.toggle-bar').on('click', function () {
+                $('.off-canvas-menu-wrap, .off-canvas-overlay').addClass('active');
+            })
+
+            $('.cls-off-canvas-menu').on('click', function () {
+                $('.off-canvas-menu-wrap, .off-canvas-overlay').removeClass('active');
+            })
+        })
+
+    </script>
+
+</body>
+
+</html>
